@@ -11,7 +11,7 @@ import SwiftUI
 struct wrist_win_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }

@@ -18,12 +18,14 @@ struct InvertedLabelStyle: LabelStyle {
 
 struct ScoreSetting: View {
     var body: some View {
-        VStack {
-            NavigationLink(destination: GameMode(scoreSetting: "GP")) {
-                Label("Golden point", systemImage: "tennisball.fill")
-            }
-            NavigationLink(destination: GameMode(scoreSetting: "ADV")) {
-                Label("Advantage", systemImage: "figure.tennis").labelStyle(InvertedLabelStyle())
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: GameMode(scoreSetting: "GP")) {
+                    Label("Golden point", systemImage: "tennisball.fill")
+                }
+                NavigationLink(destination: GameMode(scoreSetting: "ADV")) {
+                    Label("Advantage", systemImage: "figure.tennis").labelStyle(InvertedLabelStyle())
+                }
             }
         }
     }

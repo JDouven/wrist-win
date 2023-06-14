@@ -10,12 +10,14 @@ import SwiftUI
 struct GameMode: View {
     let scoreSetting: String
     var body: some View {
-        VStack {
-            NavigationLink(destination: Match(scoreSetting: "GP", gameMode: "Sets")) {
-                Label("Sets", systemImage: "trophy.fill")
-            }
-            NavigationLink(destination: Match(scoreSetting: "ADV", gameMode: "Inf")) {
-                Label("Unlimited games", systemImage: "infinity")
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: Match(scoreSetting: "GP", gameMode: "Sets")) {
+                    Label("Sets", systemImage: "trophy.fill")
+                }
+                NavigationLink(destination: Match(scoreSetting: "ADV", gameMode: "Inf")) {
+                    Label("Unlimited games", systemImage: "infinity")
+                }
             }
         }
     }
