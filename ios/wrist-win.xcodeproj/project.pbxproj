@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		A9FF79BE2A3A1AD1009153E9 /* wrist-win Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9FF79BD2A3A1AD1009153E9 /* wrist-win Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A9FF79C32A3A1AD1009153E9 /* wrist_winApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79C22A3A1AD1009153E9 /* wrist_winApp.swift */; };
-		A9FF79C52A3A1AD1009153E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79C42A3A1AD1009153E9 /* ContentView.swift */; };
+		A9FF79C52A3A1AD1009153E9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79C42A3A1AD1009153E9 /* Home.swift */; };
 		A9FF79C72A3A1AD2009153E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FF79C62A3A1AD2009153E9 /* Assets.xcassets */; };
 		A9FF79CA2A3A1AD2009153E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FF79C92A3A1AD2009153E9 /* Preview Assets.xcassets */; };
+		A9FF79D52A3A1E1F009153E9 /* ScoreSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79D42A3A1E1F009153E9 /* ScoreSetting.swift */; };
+		A9FF79D72A3A1E39009153E9 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79D62A3A1E39009153E9 /* GameMode.swift */; };
+		A9FF79D92A3A1E47009153E9 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79D82A3A1E47009153E9 /* Match.swift */; };
+		A9FF79DB2A3A1E52009153E9 /* MatchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +46,13 @@
 		A9FF79B72A3A1AD1009153E9 /* wrist-win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wrist-win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FF79BD2A3A1AD1009153E9 /* wrist-win Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wrist-win Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FF79C22A3A1AD1009153E9 /* wrist_winApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrist_winApp.swift; sourceTree = "<group>"; };
-		A9FF79C42A3A1AD1009153E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9FF79C42A3A1AD1009153E9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A9FF79C62A3A1AD2009153E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9FF79C92A3A1AD2009153E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9FF79D42A3A1E1F009153E9 /* ScoreSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSetting.swift; sourceTree = "<group>"; };
+		A9FF79D62A3A1E39009153E9 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		A9FF79D82A3A1E47009153E9 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				A9FF79C22A3A1AD1009153E9 /* wrist_winApp.swift */,
-				A9FF79C42A3A1AD1009153E9 /* ContentView.swift */,
+				A9FF79C42A3A1AD1009153E9 /* Home.swift */,
+				A9FF79D42A3A1E1F009153E9 /* ScoreSetting.swift */,
+				A9FF79D62A3A1E39009153E9 /* GameMode.swift */,
+				A9FF79D82A3A1E47009153E9 /* Match.swift */,
+				A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */,
 				A9FF79C62A3A1AD2009153E9 /* Assets.xcassets */,
 				A9FF79C82A3A1AD2009153E9 /* Preview Content */,
 			);
@@ -192,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FF79C52A3A1AD1009153E9 /* ContentView.swift in Sources */,
+				A9FF79DB2A3A1E52009153E9 /* MatchOptions.swift in Sources */,
+				A9FF79D72A3A1E39009153E9 /* GameMode.swift in Sources */,
+				A9FF79D52A3A1E1F009153E9 /* ScoreSetting.swift in Sources */,
+				A9FF79C52A3A1AD1009153E9 /* Home.swift in Sources */,
+				A9FF79D92A3A1E47009153E9 /* Match.swift in Sources */,
 				A9FF79C32A3A1AD1009153E9 /* wrist_winApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
