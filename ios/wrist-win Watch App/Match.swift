@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct Match: View {
-    let gameSettings: GameSettings
+    init(gameSettings: GameSettings) {
+        self.score = ScoreController(gameSettings: gameSettings)
+    }
     
     @State var isActive = false
-    @State private var score = Score()
-    
-    
+    @State private var score: ScoreController
     
     var body: some View {
         NavigationStack {

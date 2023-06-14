@@ -22,11 +22,18 @@ struct GameSettings {
     var gameMode: GameModes?
 }
 
-struct Score {
-    var scoreA: Int = 0
-    var scoreB: Int = 0
+class ScoreController {
+    let gameSettings: GameSettings
+    @Published var gamesWonA = 0
+    @Published var gamesWonB = 0
+    @Published var scoreA = 0
+    @Published var scoreB = 0
     
-    mutating func incrementA() -> Void {
+    init(gameSettings: GameSettings) {
+        self.gameSettings = gameSettings
+    }
+    
+    func incrementA() -> Void {
         switch(scoreA) {
         case 0:
             scoreA = 15
@@ -41,7 +48,7 @@ struct Score {
         }
     }
     
-    mutating func incrementB() -> Void {
+    func incrementB() -> Void {
         switch(scoreB) {
         case 0:
             scoreB = 15
