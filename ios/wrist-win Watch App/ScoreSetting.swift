@@ -21,11 +21,12 @@ struct ScoreSetting: View {
         NavigationStack {
             VStack {
                 NavigationLink(destination: GameMode(scoreSetting: "GP")) {
-                    Label("Golden point", systemImage: "tennisball.fill")
-                }
+                    Label("Golden point", systemImage: "tennisball.fill").padding(.vertical, 6)
+                }.buttonBorderShape(.roundedRectangle)
                 NavigationLink(destination: GameMode(scoreSetting: "ADV")) {
                     Label("Advantage", systemImage: "figure.tennis").labelStyle(InvertedLabelStyle())
-                }
+                        .padding(.vertical, 6)
+                }.buttonBorderShape(.roundedRectangle)
             }
         }
     }

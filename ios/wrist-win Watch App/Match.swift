@@ -10,29 +10,42 @@ import SwiftUI
 struct Match: View {
     let scoreSetting: String
     let gameMode: String
+    @State var isActive = false
+    
     var body: some View {
         NavigationStack {
-            HStack {
-                Button(action: {}) {
-                    Label("Reset", systemImage: "arrow.uturn.backward.circle.fill").labelStyle(.iconOnly)
-                }.buttonStyle(.plain)
-                VStack(alignment: .center, spacing: 0) {
-                    HStack(alignment: .bottom) {
-                        Text("4")
-                        Spacer()
-                        Text("15").font(
-                            .system(size: 80, weight: .semibold))
-                        .padding(0)
+          
+                HStack {
+                    Button(action: {
+                        //undo
+                    }) {
+                        Label("Reset", systemImage: "arrow.uturn.backward.circle.fill").labelStyle(.iconOnly)
+                    }.buttonStyle(.plain).padding(.trailing, 3.0)
+                    VStack(alignment: .center, spacing: 0) {
+                        HStack(alignment: .bottom) {
+                            Text("4").font(.system(size: 20, weight: .semibold))
+                                .padding(.bottom, 2.0)
+                            Spacer()
+                            Text("15").font(
+                                .system(size: 76, weight: .semibold))
+                            .padding(.vertical, -8)
+                        }
+                        Divider().frame(height: 2).overlay(Color.accentColor)
+                        HStack(alignment: .top) {
+                            Text("2").font(.system(size: 20, weight: .semibold))
+                                .padding(.top, 2.0)
+                            Spacer()
+                            Text("30").font(
+                                .system(size: 76, weight: .semibold))
+                            .padding(.vertical, -8)
+                        }
                     }
-                    Divider()
-                    HStack(alignment: .top) {
-                        Text("2")
-                        Spacer()
-                        Text("30").font(
-                            .system(size: 80, weight: .semibold))
-                    }
-                }
-            }
+                
+            }.navigationDestination(isPresented: $isActive) {
+                MatchOptions()
+            }.onLongPressGesture(perform: {
+                isActive = true
+            })
         }.navigationBarBackButtonHidden(true)
     }
 }

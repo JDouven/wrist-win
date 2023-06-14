@@ -9,7 +9,16 @@ import SwiftUI
 
 struct MatchOptions: View {
     var body: some View {
-        Text("MatchOptions")
+        VStack(){
+            Text("MatchOptions")
+            Button(action: {
+                //end match
+            }) {
+                Label("End match", systemImage: "stop.circle")
+            }.buttonStyle(.bordered).tint(.red)
+        }
+        
+        
     }
 }
 

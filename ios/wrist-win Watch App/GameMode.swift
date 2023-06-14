@@ -14,10 +14,12 @@ struct GameMode: View {
             VStack {
                 NavigationLink(destination: Match(scoreSetting: "GP", gameMode: "Sets")) {
                     Label("Sets", systemImage: "trophy.fill")
-                }
+                        .padding(.vertical, 6)
+                }.buttonBorderShape(.roundedRectangle)
                 NavigationLink(destination: Match(scoreSetting: "ADV", gameMode: "Inf")) {
                     Label("Unlimited games", systemImage: "infinity")
-                }
+                        .padding(.vertical, 6)
+                }.buttonBorderShape(.roundedRectangle)
             }
         }
     }
