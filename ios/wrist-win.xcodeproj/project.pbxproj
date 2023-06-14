@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A98881D52A3A197100A4760A /* wrist-win Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A98881D42A3A197100A4760A /* wrist-win Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A98881DA2A3A197100A4760A /* wrist_winApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98881D92A3A197100A4760A /* wrist_winApp.swift */; };
+		A98881DC2A3A197100A4760A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98881DB2A3A197100A4760A /* ContentView.swift */; };
+		A98881DE2A3A197200A4760A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98881DD2A3A197200A4760A /* Assets.xcassets */; };
+		A98881E12A3A197200A4760A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98881E02A3A197200A4760A /* Preview Assets.xcassets */; };
+		A98881EB2A3A197200A4760A /* wrist_win_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98881EA2A3A197200A4760A /* wrist_win_Watch_AppTests.swift */; };
+		A98881F52A3A197200A4760A /* wrist_win_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98881F42A3A197200A4760A /* wrist_win_Watch_AppUITests.swift */; };
+		A98881F72A3A197200A4760A /* wrist_win_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98881F62A3A197200A4760A /* wrist_win_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A98881D62A3A197100A4760A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98881C82A3A197000A4760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98881D32A3A197100A4760A;
+			remoteInfo = "wrist-win Watch App";
+		};
+		A98881E72A3A197200A4760A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98881C82A3A197000A4760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98881D32A3A197100A4760A;
+			remoteInfo = "wrist-win Watch App";
+		};
+		A98881F12A3A197200A4760A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98881C82A3A197000A4760A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98881D32A3A197100A4760A;
+			remoteInfo = "wrist-win Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A98881FD2A3A197200A4760A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A98881D52A3A197100A4760A /* wrist-win Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A98881CE2A3A197100A4760A /* wrist-win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wrist-win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98881D42A3A197100A4760A /* wrist-win Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wrist-win Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98881D92A3A197100A4760A /* wrist_winApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrist_winApp.swift; sourceTree = "<group>"; };
+		A98881DB2A3A197100A4760A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A98881DD2A3A197200A4760A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A98881E02A3A197200A4760A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A98881E62A3A197200A4760A /* wrist-win Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wrist-win Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98881EA2A3A197200A4760A /* wrist_win_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrist_win_Watch_AppTests.swift; sourceTree = "<group>"; };
+		A98881F02A3A197200A4760A /* wrist-win Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wrist-win Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98881F42A3A197200A4760A /* wrist_win_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrist_win_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		A98881F62A3A197200A4760A /* wrist_win_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wrist_win_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A98881D12A3A197100A4760A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881E32A3A197200A4760A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881ED2A3A197200A4760A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A98881C72A3A197000A4760A = {
+			isa = PBXGroup;
+			children = (
+				A98881D82A3A197100A4760A /* wrist-win Watch App */,
+				A98881E92A3A197200A4760A /* wrist-win Watch AppTests */,
+				A98881F32A3A197200A4760A /* wrist-win Watch AppUITests */,
+				A98881CF2A3A197100A4760A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A98881CF2A3A197100A4760A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98881CE2A3A197100A4760A /* wrist-win.app */,
+				A98881D42A3A197100A4760A /* wrist-win Watch App.app */,
+				A98881E62A3A197200A4760A /* wrist-win Watch AppTests.xctest */,
+				A98881F02A3A197200A4760A /* wrist-win Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98881D82A3A197100A4760A /* wrist-win Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A98881D92A3A197100A4760A /* wrist_winApp.swift */,
+				A98881DB2A3A197100A4760A /* ContentView.swift */,
+				A98881DD2A3A197200A4760A /* Assets.xcassets */,
+				A98881DF2A3A197200A4760A /* Preview Content */,
+			);
+			path = "wrist-win Watch App";
+			sourceTree = "<group>";
+		};
+		A98881DF2A3A197200A4760A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A98881E02A3A197200A4760A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A98881E92A3A197200A4760A /* wrist-win Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A98881EA2A3A197200A4760A /* wrist_win_Watch_AppTests.swift */,
+			);
+			path = "wrist-win Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A98881F32A3A197200A4760A /* wrist-win Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A98881F42A3A197200A4760A /* wrist_win_Watch_AppUITests.swift */,
+				A98881F62A3A197200A4760A /* wrist_win_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "wrist-win Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A98881CD2A3A197100A4760A /* wrist-win */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98881FE2A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win" */;
+			buildPhases = (
+				A98881CC2A3A197100A4760A /* Resources */,
+				A98881FD2A3A197200A4760A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A98881D72A3A197100A4760A /* PBXTargetDependency */,
+			);
+			name = "wrist-win";
+			productName = "wrist-win";
+			productReference = A98881CE2A3A197100A4760A /* wrist-win.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A98881D32A3A197100A4760A /* wrist-win Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98881FA2A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch App" */;
+			buildPhases = (
+				A98881D02A3A197100A4760A /* Sources */,
+				A98881D12A3A197100A4760A /* Frameworks */,
+				A98881D22A3A197100A4760A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wrist-win Watch App";
+			productName = "wrist-win Watch App";
+			productReference = A98881D42A3A197100A4760A /* wrist-win Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A98881E52A3A197200A4760A /* wrist-win Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98882012A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch AppTests" */;
+			buildPhases = (
+				A98881E22A3A197200A4760A /* Sources */,
+				A98881E32A3A197200A4760A /* Frameworks */,
+				A98881E42A3A197200A4760A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A98881E82A3A197200A4760A /* PBXTargetDependency */,
+			);
+			name = "wrist-win Watch AppTests";
+			productName = "wrist-win Watch AppTests";
+			productReference = A98881E62A3A197200A4760A /* wrist-win Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A98881EF2A3A197200A4760A /* wrist-win Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98882042A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch AppUITests" */;
+			buildPhases = (
+				A98881EC2A3A197200A4760A /* Sources */,
+				A98881ED2A3A197200A4760A /* Frameworks */,
+				A98881EE2A3A197200A4760A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A98881F22A3A197200A4760A /* PBXTargetDependency */,
+			);
+			name = "wrist-win Watch AppUITests";
+			productName = "wrist-win Watch AppUITests";
+			productReference = A98881F02A3A197200A4760A /* wrist-win Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A98881C82A3A197000A4760A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A98881CD2A3A197100A4760A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A98881D32A3A197100A4760A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A98881E52A3A197200A4760A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A98881D32A3A197100A4760A;
+					};
+					A98881EF2A3A197200A4760A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A98881D32A3A197100A4760A;
+					};
+				};
+			};
+			buildConfigurationList = A98881CB2A3A197000A4760A /* Build configuration list for PBXProject "wrist-win" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A98881C72A3A197000A4760A;
+			productRefGroup = A98881CF2A3A197100A4760A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98881CD2A3A197100A4760A /* wrist-win */,
+				A98881D32A3A197100A4760A /* wrist-win Watch App */,
+				A98881E52A3A197200A4760A /* wrist-win Watch AppTests */,
+				A98881EF2A3A197200A4760A /* wrist-win Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A98881CC2A3A197100A4760A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881D22A3A197100A4760A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98881E12A3A197200A4760A /* Preview Assets.xcassets in Resources */,
+				A98881DE2A3A197200A4760A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881E42A3A197200A4760A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881EE2A3A197200A4760A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A98881D02A3A197100A4760A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98881DC2A3A197100A4760A /* ContentView.swift in Sources */,
+				A98881DA2A3A197100A4760A /* wrist_winApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881E22A3A197200A4760A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98881EB2A3A197200A4760A /* wrist_win_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98881EC2A3A197200A4760A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98881F52A3A197200A4760A /* wrist_win_Watch_AppUITests.swift in Sources */,
+				A98881F72A3A197200A4760A /* wrist_win_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A98881D72A3A197100A4760A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A98881D32A3A197100A4760A /* wrist-win Watch App */;
+			targetProxy = A98881D62A3A197100A4760A /* PBXContainerItemProxy */;
+		};
+		A98881E82A3A197200A4760A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A98881D32A3A197100A4760A /* wrist-win Watch App */;
+			targetProxy = A98881E72A3A197200A4760A /* PBXContainerItemProxy */;
+		};
+		A98881F22A3A197200A4760A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A98881D32A3A197100A4760A /* wrist-win Watch App */;
+			targetProxy = A98881F12A3A197200A4760A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A98881F82A3A197200A4760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A98881F92A3A197200A4760A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A98881FB2A3A197200A4760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wrist-win Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "wrist-win";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A98881FC2A3A197200A4760A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wrist-win Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "wrist-win";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A98881FF2A3A197200A4760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				INFOPLIST_KEY_CFBundleDisplayName = "wrist-win";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A98882002A3A197200A4760A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				INFOPLIST_KEY_CFBundleDisplayName = "wrist-win";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A98882022A3A197200A4760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wrist-win Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wrist-win Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A98882032A3A197200A4760A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wrist-win Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wrist-win Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A98882052A3A197200A4760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "wrist-win Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A98882062A3A197200A4760A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4X64NV4S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.douven.wrist-win-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "wrist-win Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98881CB2A3A197000A4760A /* Build configuration list for PBXProject "wrist-win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98881F82A3A197200A4760A /* Debug */,
+				A98881F92A3A197200A4760A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98881FA2A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98881FB2A3A197200A4760A /* Debug */,
+				A98881FC2A3A197200A4760A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98881FE2A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98881FF2A3A197200A4760A /* Debug */,
+				A98882002A3A197200A4760A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98882012A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98882022A3A197200A4760A /* Debug */,
+				A98882032A3A197200A4760A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98882042A3A197200A4760A /* Build configuration list for PBXNativeTarget "wrist-win Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98882052A3A197200A4760A /* Debug */,
+				A98882062A3A197200A4760A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A98881C82A3A197000A4760A /* Project object */;
+}
