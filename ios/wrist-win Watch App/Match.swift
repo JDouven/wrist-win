@@ -50,7 +50,18 @@ struct Match: View {
             }.onLongPressGesture(perform: {
                 isActive = true
             })
+            
         }.navigationBarBackButtonHidden(true)
+            .contentShape(Rectangle())
+            .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
+                .onEnded { value in
+                    switch(value.translation.width, value.translation.height) {
+                        case (-100...100, ...0):  print("up swipe")
+                        case (-100...100, 0...):  print("down swipe")
+                        default:  print("no clue")
+                    }
+                }
+            )
     }
 }
 
