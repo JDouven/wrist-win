@@ -31,7 +31,7 @@ struct Match: View {
                         Spacer()
                         Text("\(score.scoreA)").font(
                             .system(size: 76, weight: .semibold))
-                        .padding(.vertical, -8)
+                        .padding(.vertical, -6)
                     }
                     Divider().frame(height: 2).overlay(Color.accentColor)
                     HStack(alignment: .top) {
@@ -53,6 +53,7 @@ struct Match: View {
             
         }.navigationBarBackButtonHidden(true)
             .contentShape(Rectangle())
+            .edgesIgnoringSafeArea(.bottom)
             .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
                 .onEnded { value in
                     switch(value.translation.width, value.translation.height) {
