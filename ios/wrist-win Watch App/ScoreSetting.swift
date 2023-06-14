@@ -20,10 +20,10 @@ struct ScoreSetting: View {
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink(destination: GameMode(scoreSetting: "GP")) {
+                NavigationLink(destination: GameMode(scoreType: .goldenPoint)) {
                     Label("Golden point", systemImage: "tennisball.fill")
                 }
-                NavigationLink(destination: GameMode(scoreSetting: "ADV")) {
+                NavigationLink(destination: GameMode(scoreType: .advantage)) {
                     Label("Advantage", systemImage: "figure.tennis").labelStyle(InvertedLabelStyle())
                 }
             }

@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct Match: View {
-    let scoreSetting: String
-    let gameMode: String
+    let gameSettings: GameSettings
     
-    @State private var topScore = 0
-    @State private var bottomScore = 0
+    @State private var score = Score()
     
     var body: some View {
         NavigationStack {
@@ -24,7 +22,7 @@ struct Match: View {
                     HStack(alignment: .bottom) {
                         Text("4")
                         Spacer()
-                        Text("\(topScore)").font(
+                        Text("\(score.scoreA)").font(
                             .system(size: 80, weight: .semibold))
                         .padding(0)
                     }
@@ -32,7 +30,7 @@ struct Match: View {
                     HStack(alignment: .top) {
                         Text("2")
                         Spacer()
-                        Text("\(bottomScore)").font(
+                        Text("\(score.scoreB)").font(
                             .system(size: 80, weight: .semibold))
                     }
                 }
@@ -43,6 +41,6 @@ struct Match: View {
 
 struct Match_Previews: PreviewProvider {
     static var previews: some View {
-        Match(scoreSetting: "ADV", gameMode: "Sets")
+        Match(gameSettings: GameSettings(scoreType: .goldenPoint, gameMode: .unlimited))
     }
 }
