@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct GameMode: View {
-    let scoreSetting: String
+    var scoreType: ScoreTypes
     var body: some View {
         NavigationStack {
             VStack {
-                NavigationLink(destination: Match(scoreSetting: "GP", gameMode: "Sets")) {
+                NavigationLink(destination: Match(gameSettings: GameSettings(scoreType: scoreType, gameMode: .sets))) {
                     Label("Sets", systemImage: "trophy.fill")
                         .padding(.vertical, 6)
                 }.buttonBorderShape(.roundedRectangle)
-                NavigationLink(destination: Match(scoreSetting: "ADV", gameMode: "Inf")) {
+                NavigationLink(destination: Match(gameSettings: GameSettings(scoreType: scoreType, gameMode: .unlimited))) {
                     Label("Unlimited games", systemImage: "infinity")
                         .padding(.vertical, 6)
                 }.buttonBorderShape(.roundedRectangle)
@@ -27,6 +27,6 @@ struct GameMode: View {
 
 struct GameMode_Previews: PreviewProvider {
     static var previews: some View {
-        GameMode(scoreSetting: "ADV")
+        GameMode(scoreType: .goldenPoint)
     }
 }
