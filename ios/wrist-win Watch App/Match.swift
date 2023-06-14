@@ -19,7 +19,7 @@ struct Match: View {
         NavigationStack {
             HStack {
                 Button(action: {
-                    //undo
+                    controller.undo()
                 }) {
                     Label("Reset", systemImage: "arrow.uturn.backward.circle.fill")
                         .labelStyle(.iconOnly)

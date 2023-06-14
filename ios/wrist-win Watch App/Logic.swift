@@ -60,7 +60,7 @@ class ScoreController: ObservableObject {
     }
     
     func incrementA() -> Void {
-        scoreHistory.append(score)
+        scoreHistory.append(score.copy() as! Score)
         switch(score.a) {
         case 0:
             score.a = 15
@@ -108,6 +108,7 @@ class ScoreController: ObservableObject {
             return
         }
         self.score = lastScore
+        scoreHistory.removeLast()
     }
     
     private func gameWonByA() -> Void {
