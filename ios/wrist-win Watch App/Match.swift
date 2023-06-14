@@ -10,6 +10,10 @@ import SwiftUI
 struct Match: View {
     let scoreSetting: String
     let gameMode: String
+    
+    @State private var topScore = 0
+    @State private var bottomScore = 0
+    
     var body: some View {
         NavigationStack {
             HStack {
@@ -20,7 +24,7 @@ struct Match: View {
                     HStack(alignment: .bottom) {
                         Text("4")
                         Spacer()
-                        Text("15").font(
+                        Text("\(topScore)").font(
                             .system(size: 80, weight: .semibold))
                         .padding(0)
                     }
@@ -28,7 +32,7 @@ struct Match: View {
                     HStack(alignment: .top) {
                         Text("2")
                         Spacer()
-                        Text("30").font(
+                        Text("\(bottomScore)").font(
                             .system(size: 80, weight: .semibold))
                     }
                 }
