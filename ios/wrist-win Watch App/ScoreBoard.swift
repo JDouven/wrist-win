@@ -16,8 +16,7 @@ struct ScoreBoard: View {
                 Text("\(score.gamesA)").font(.system(size: 20, weight: .semibold))
                     .padding(.bottom, 2.0)
                 Spacer()
-                Text("\(score.a)").font(
-                    .system(size: 76, weight: .semibold))
+                ScoreValue(scoreSelf: $score.a, scoreOther: $score.b)
                 .padding(.vertical, -6)
             }
             Divider().frame(height: 2).overlay(Color.accentColor)
@@ -25,8 +24,7 @@ struct ScoreBoard: View {
                 Text("\(score.gamesB)").font(.system(size: 20, weight: .semibold))
                     .padding(.top, 2.0)
                 Spacer()
-                Text("\(score.b)").font(
-                    .system(size: 76, weight: .semibold))
+                ScoreValue(scoreSelf: $score.b, scoreOther: $score.a)
                 .padding(.vertical, -8)
             }
         }

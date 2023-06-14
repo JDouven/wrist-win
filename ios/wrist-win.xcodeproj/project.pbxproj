@@ -18,6 +18,7 @@
 		A9FF79DB2A3A1E52009153E9 /* MatchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */; };
 		A9FF79DD2A3A37ED009153E9 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79DC2A3A37ED009153E9 /* Logic.swift */; };
 		A9FF79DF2A3A4FB9009153E9 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79DE2A3A4FB9009153E9 /* ScoreBoard.swift */; };
+		A9FF79E12A3A5B8A009153E9 /* ScoreValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF79E02A3A5B8A009153E9 /* ScoreValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchOptions.swift; sourceTree = "<group>"; };
 		A9FF79DC2A3A37ED009153E9 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		A9FF79DE2A3A4FB9009153E9 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+		A9FF79E02A3A5B8A009153E9 /* ScoreValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				A9FF79D62A3A1E39009153E9 /* GameMode.swift */,
 				A9FF79D82A3A1E47009153E9 /* Match.swift */,
 				A9FF79DE2A3A4FB9009153E9 /* ScoreBoard.swift */,
+				A9FF79E02A3A5B8A009153E9 /* ScoreValue.swift */,
 				A9FF79DA2A3A1E52009153E9 /* MatchOptions.swift */,
 				A9FF79DC2A3A37ED009153E9 /* Logic.swift */,
 				A9FF79C62A3A1AD2009153E9 /* Assets.xcassets */,
@@ -217,6 +220,7 @@
 				A9FF79C52A3A1AD1009153E9 /* Home.swift in Sources */,
 				A9FF79D92A3A1E47009153E9 /* Match.swift in Sources */,
 				A9FF79C32A3A1AD1009153E9 /* wrist_winApp.swift in Sources */,
+				A9FF79E12A3A5B8A009153E9 /* ScoreValue.swift in Sources */,
 				A9FF79DF2A3A4FB9009153E9 /* ScoreBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

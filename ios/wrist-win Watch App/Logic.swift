@@ -70,7 +70,13 @@ class ScoreController: ObservableObject {
             score.a = 40
         case 40:
             if(gameSettings.scoreType == .advantage) {
-                score.a = 60
+                if(score.b == 60) {
+                    score.b = 40
+                } else if(score.b == 40) {
+                    score.a = 60
+                } else {
+                    gameWonByA()
+                }
             } else {
                 gameWonByA()
             }
@@ -82,7 +88,7 @@ class ScoreController: ObservableObject {
     }
     
     func incrementB() -> Void {
-        scoreHistory.append(score)
+        scoreHistory.append(score.copy() as! Score)
         switch(score.b) {
         case 0:
             score.b = 15
@@ -92,7 +98,13 @@ class ScoreController: ObservableObject {
             score.b = 40
         case 40:
             if(gameSettings.scoreType == .advantage) {
-                score.b = 60
+                if(score.a == 60) {
+                    score.a = 40
+                } else if(score.a == 40) {
+                    score.b = 60
+                } else {
+                    gameWonByB()
+                }
             } else {
                 gameWonByB()
             }
