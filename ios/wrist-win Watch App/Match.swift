@@ -27,9 +27,9 @@ struct Match: View {
                 ScoreBoard(score: controller.score)
             }
         }.navigationBarBackButtonHidden(true)
-            .contentShape(Rectangle())
+            .background(.background)
             .edgesIgnoringSafeArea(.bottom)
-            .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
+            .gesture(DragGesture(minimumDistance: 20.0, coordinateSpace: .local)
                 .onEnded { value in
                     switch(value.translation.width, value.translation.height) {
                     case (-100...100, ...0):
@@ -45,7 +45,6 @@ struct Match: View {
             }.onLongPressGesture(perform: {
                 isActive = true
             })
-
     }
 }
 
