@@ -27,16 +27,19 @@ struct Match: View {
                 ScoreBoard(score: controller.score)
             }
         }.navigationBarBackButtonHidden(true)
-            .contentShape(Rectangle())
             .edgesIgnoringSafeArea(.bottom)
-            .gesture(DragGesture(minimumDistance: 3.0, coordinateSpace: .local)
+            .contentShape(Rectangle())
+            .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global)
                 .onEnded { value in
-                    switch(value.translation.width, value.translation.height) {
-                    case (-100...100, ...0):
-                        controller.incrementA()
-                    case (-100...100, 0...):
-                        controller.incrementB()
-                    default:  print("no clue")
+                    let horizontalAmount = value.translation.width
+                    let verticalAmount = value.translation.height
+                    
+                    if abs(horizontalAmount) < abs(verticalAmount) {
+                        if verticalAmount < 0 {
+                            controller.incrementA()
+                        } else {
+                            controller.incrementB()
+                        }
                     }
                 }
             )
@@ -45,7 +48,7 @@ struct Match: View {
             }.onLongPressGesture(perform: {
                 isActive = true
             })
-
+        
     }
 }
 
