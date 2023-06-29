@@ -24,9 +24,9 @@ struct ScoreValue: View {
     
     var body: some View {
         if(showDeuce) {
-            Text("Deuce").font(.system(size: 48, weight: .medium))
+            Text("Deuce").font(.system(size: 36, weight: .medium))
         } else {
-            Text(scoreDisplayValue).font(.system(size: 76, weight: .semibold))
+            Text(scoreDisplayValue).font(.system(size: 72, weight: .semibold))
         }
     }
 }
